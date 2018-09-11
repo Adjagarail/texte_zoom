@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <title>Police qui augmente</title>
+    <meta charset="utf-8">
+  </head>
+  <style media="screen">
+  p
+  {
+    font-style: normal;
+    font-size: 50px;
+    text-align: justify;
+  }
+  </style>
+  <body>
+    <p id="Paragraphe">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+     <input type="button" id="macro" value="Appuyer sur moi pour zoomer !!!">
+     <input type="button" id="micro" value="Appuyer sur moi pour Dézoomer!!!">
+     <script type="text/javascript">
+       var text = document.getElementById('Paragraphe');
+       var validation = document.getElementById('macro');
+       var validation_2 =document.getElementById('micro');
+       validation_2.addEventListener('click',Petit);
+       validation.addEventListener('click',Gros);
+       function Gros()
+       {
+            text.style.fontSize="80px";
+       }
+       function Petit()
+       {
+         text.style.fontSize="50px";
+       }
+     </script>
+  </body>
+</html>
